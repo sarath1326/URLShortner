@@ -1,0 +1,48 @@
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+.nave-main{
+
+     width: 100%;
+     height: 80px;
+     background-color: rgb(3, 3, 46);
+     padding-top: 20px;
+     display: flex;
+}
+
+.nave-title{
+
+
+      color: white;
+      margin-left: 50px;
+      font-size: 35px;
+      
+}
+
+.nave-drop-main{
+
+   position: absolute;
+ right: 100px;
+
+}
+
+.nav-drop-btn{
+
+    
+     background-color:#687168 ;
+     border: none;
+}
+
+.nav-home-icon{
+
+     margin-left:  100px;
+     margin-top: 18px;
+     color: white;
+     font-size: 20px;
+      
+}

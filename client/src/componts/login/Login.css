@@ -1,0 +1,84 @@
+
+
+.login-main{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(3, 3, 46);
+    display: flex;
+    justify-content: center;
+   padding-top: 50px;
+
+ }
+
+ .log-form-box-main{
+
+       width: 500px;
+       height: 500px;
+       background-color: white;
+       border-radius: 10px;
+       
+ }
+
+ .log-form-title{
+
+      font-size: 35px;
+      color: rgb(3, 3, 46);
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+
+ }
+
+ 
+
+ input[type=text] {
+     background: transparent;
+     border: none;
+     border-bottom: 1px solid #000000;
+     width: 300px;
+     
+ }
+
+ input:focus{
+
+    height: 35px;
+ }
+
+ .log-form{
+
+     margin-left: 100px;
+     margin-top: 70px;
+ }
+
+ .log-btn{
+
+      border: none;
+      width: 200px;
+      height: 40px;
+      background-color: blue;
+      color: white;
+      margin-top: 100px;
+      margin-left: 40px;
+      font-weight: bold;
+      border-radius: 10px;
+     
+ }
+
+.log-btn:hover{
+
+ box-shadow: 5px 5px 5px rgb(48, 48, 48);
+}
+
+span{
+
+ color: red;
+}
+
+.log-sigopt{
+
+    margin-left: 60px;
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+
+     
+}
