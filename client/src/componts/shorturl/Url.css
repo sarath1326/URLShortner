@@ -1,0 +1,50 @@
+
+
+
+.url-res-box-main{
+
+      width: 100%;
+      height: 200px;
+      /* background-color: aqua; */
+      margin-top: 50px;
+    display: grid;
+    justify-content: center;
+}
+
+
+.url-res-p{
+
+      text-align: center;
+      color: white;
+      font-size: 20px;
+}
+
+.url-link-icon{
+
+    color: red;
+}
+
+.url-icons{
+
+     text-align: center;
+     
+}
+
+
+
+.url-copy-icon{
+
+    color: white;
+}
+
+.url-de-icon{
+
+     color: red;
+     margin-left: 20px;
+     font-size: 18px;
+}
+
+.url-loding{
+
+    margin-top: 50px;
+}

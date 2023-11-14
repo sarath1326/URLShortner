@@ -31,7 +31,7 @@
 
     
 
-    input[type=text] {
+ .sig-form-box-main input[type=text] {
         background: transparent;
         border: none;
         border-bottom: 1px solid #000000;
@@ -39,7 +39,7 @@
         
     }
 
-    input:focus{
+.sig-form-box-main input:focus{
 
        height: 35px;
     }

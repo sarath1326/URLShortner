@@ -6,8 +6,12 @@ import Navbar from '../navbar/Navbar'
 import { useFormik } from 'formik'
 import {validationSchem} from "./loginSchema"
 import { useNavigate } from 'react-router-dom'
+import axios from "../constant/Axios"
+import {message} from "antd"
 
 function Login() {
+
+    axios.defaults.withCredentials = true;
 
      
     const navigate=useNavigate();
@@ -23,7 +27,31 @@ function Login() {
     const {errors,values,handleChange,handleBlur,handleSubmit,touched}=useFormik({
         
         initialValues:initionValues,
-        validationSchema:validationSchem
+        validationSchema:validationSchem,
+
+        onSubmit:(value)=>{
+
+
+             axios.post("/login",value).then((respo)=>{
+
+                const result=respo.data ;
+
+                     if(result.nouser){
+
+                        message.error("This email doesn't match ");
+
+                     }else if(result.flag){
+
+                          navigate("/");
+                    
+                        }else{
+
+                         message.error("This email and password doesn't match ");
+                     }
+             })
+
+
+        }
 
 
     })

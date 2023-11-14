@@ -1,0 +1,102 @@
+
+
+
+.qr-home{
+
+
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(3, 3, 46);
+    padding-top: 50px;
+
+}
+
+.input-div-main{
+
+     width: 100%;
+     height: 200px;
+   padding-top: 100px;
+    padding-left: 350px;
+   
+    
+    
+}
+
+.qr-inp{
+
+    width: 700px;
+    background-color: transparent;
+    border: 2px solid white;
+    height: 40px;
+    color: white;
+    text-align: center;
+    margin-right: 20px;
+
+
+}
+
+.qr-gen-btn{
+
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+}
+
+.qr-div-main{
+    
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+   
+   
+}
+
+.qr-box{
+
+    width: 200px;
+    height: 200px;
+    background-color: bisque;
+}
+
+.qr-img{
+
+    width: 100%;
+    height: 100%;
+}
+
+.btn-main{
+
+    width: 100%;
+    height: 50px;
+    
+    display: flex;
+    justify-content: center;
+   
+}
+
+.dwn-btn{
+
+    width: 100px;
+    height: 30px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.can-btn{
+
+     width: 100px;
+     height: 30px;
+     background-color: red;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     margin-left: 10px;
+     
+}

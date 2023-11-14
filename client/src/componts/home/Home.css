@@ -5,5 +5,44 @@
 
       width: 100%;
       height: 100vh;
-      background-color: rgb(3, 3, 46) ;
+      background-color: rgb(3, 3, 46);
+        display: flex;
+      justify-content: center;
+      padding-top: 200px;
+
 }
+
+
+.home-btn-url{
+
+       width: 200px;
+       height: 50px;
+       border: none;
+       background-color: aqua;
+       border-radius: 10px;
+       margin-right: 20px;
+       font-weight: bold;
+       
+      }
+
+      .home-btn-qr{
+
+            width: 200px;
+            height: 50px;
+            border: none;
+            background-color:brown;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+
+              
+      }
+
+
+
+
+
+
+
+
+

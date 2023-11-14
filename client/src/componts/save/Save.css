@@ -1,0 +1,62 @@
+
+
+
+.save-main{
+
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(3, 3, 46) ;
+    padding-top: 50px;
+}
+
+.save-title{
+
+     text-align: center;
+     color: white;
+     font-size: 25px;
+    
+
+}
+
+.list-box-main{
+
+     width: 100%;
+     height: 500px;
+     padding-top: 100px;
+     display:flex;
+     justify-content: center;
+     
+}
+
+.save-url-div{
+
+     width: 400px;
+     height: 40px;
+     background-color: white;
+     border-radius: 10px;
+     margin-bottom: 10px;
+     display: flex;
+     align-items: center;
+     padding-left: 50px;
+    
+     
+}
+
+.save-data-box{
+
+    width: 700px;
+    height: 100%;
+   padding-left: 150px;
+
+}
+
+.save-copy-icon{
+
+    margin-left: 250px;
+}
+
+.save-de-icon{
+
+    margin-left: 20px;
+    color: red;
+}

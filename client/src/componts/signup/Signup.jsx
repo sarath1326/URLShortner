@@ -7,6 +7,11 @@ import Navbar from '../navbar/Navbar';
 import {useFormik} from "formik"
 import {validationSchem} from "./schemaSignup"
 import { useNavigate } from 'react-router-dom';
+import axios from "../constant/Axios";
+import {message} from "antd";
+
+
+
 
 function Signup() {
 
@@ -27,7 +32,29 @@ function Signup() {
 
                onSubmit:(value)=>{
 
-                 console.log(value)
+                 axios.post("/sign",value).then((respo)=>{
+
+                  const result=respo.data ;
+
+                  if(result.exit){
+
+                    message.error("This email already exit..")
+                  
+                  }else if(result.flag){
+
+                     navigate("/log");
+                      
+                  }else{
+
+                     message.error("server err");
+                  }
+                
+                }).catch(err=>{
+
+                  message.error("somthing worng...! ");
+
+
+                 })
 
 
                }
