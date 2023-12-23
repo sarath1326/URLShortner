@@ -57,11 +57,34 @@
          height: 40px;
          background-color: blue;
          color: white;
-         margin-top: 100px;
+         margin-top: 50px;
          margin-left: 40px;
          font-weight: bold;
          border-radius: 10px;
         
+    }
+
+    .google-btn{
+
+        border: none;
+         width: 200px;
+         height: 40px;
+         background-color: rgb(243, 242, 240);
+         color: rgb(9, 9, 9);
+         margin-top: 10px;
+         margin-bottom: 20px;
+         margin-left: 138px;
+         font-weight: bold;
+         border-radius: 10px;
+         border: 1px solid black;
+
+
+    }
+
+    .google-img{
+
+        width: 30px;
+        height: 30px;
     }
 
 .sig-btn:hover{
@@ -76,7 +99,7 @@ span{
 
 .sig-logopt{
 
-      margin-left: 40px;
+      margin-left: 130px;
       margin-top: 20px;
       font-weight: bold;
       cursor: pointer;

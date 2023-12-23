@@ -57,6 +57,11 @@
 
 .save-de-icon{
 
-    margin-left: 20px;
+    margin-left: 15px;
     color: red;
+}
+
+.save-name{
+
+      font-size: 17px;
 }

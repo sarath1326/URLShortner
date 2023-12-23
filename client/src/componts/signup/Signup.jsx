@@ -140,6 +140,11 @@ function Signup() {
 
 
                 <button type='submit' className='sig-btn'> Signup   </button><br/>
+
+                </form>
+               
+               
+                <button className='google-btn' > <img className='google-img' src='./google.png' />  Google  </button>
                 <p className='sig-logopt'  onClick={()=>{navigate("/log")}}  > Have You Already Account ? </p>
 
 
@@ -148,7 +153,7 @@ function Signup() {
 
 
 
-            </form>
+           
 
 
 

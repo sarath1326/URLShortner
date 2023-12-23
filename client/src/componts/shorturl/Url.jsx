@@ -53,6 +53,8 @@ function Url() {
                 setres(result.data)
                 setloding(false)
                 setflag(true)
+                setinput('')
+                setshort('')
 
 
 
@@ -90,6 +92,7 @@ function Url() {
                         className='qr-inp'
                         placeholder='paste your url'
                         onChange={(e) => { setinput(e.target.value) }}
+                        value={input}
 
                     />
                     <br /> <br />
@@ -100,6 +103,7 @@ function Url() {
                         className='qr-inp'
                         placeholder='Enter Short Name '
                         onChange={(e) => { setshort(e.target.value) }}
+                        value={short}
 
 
 

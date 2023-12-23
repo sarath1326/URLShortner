@@ -6,6 +6,9 @@ const express = require('express');
 const router = express();
 const control = require("../Control/control")
 const JWT=require("jsonwebtoken");
+const { OAuth2Client}= require("google-auth-library")
+const dotenv=require('dotenv')
+dotenv.config()
 
 
 
@@ -233,6 +236,62 @@ router.get("/redirect",(req,res)=>{
 
          
     })
+
+
+    router.post("/save_delete",(req,res)=>{
+
+      const {id}=req.body
+
+        control.save_delete(id).then(()=>{
+
+              res.json({flag:true})
+        
+            }).catch(err=>{
+
+              res.json({flag:false})
+
+
+        })
+    
+         
+    })
+
+
+
+    router.post("/",async(req,res)=>{
+
+      res.header('Acess-Control-Allow-Origin','http://localhost:5173')
+      res.header('Referrer-Policy','no-referrer-when-downgrade')
+
+
+        const redirecturl='http://127.0.0.1:3000/oauth'
+
+        const oAuth2Client=new OAuth2Client(
+
+         process.env.CLIENT_ID,
+         process.env.CLIENT_SECRET,
+         redirecturl
+         
+         )
+
+         const authorizeurl=oAuth2Client.generateAuthUrl({
+
+           access_type:'offline',
+           scope:'https://www.googleapis.com/auth/userinfo.profile openid',
+           prompt:'consent'
+         })
+
+    res.json({url:authorizeurl})
+
+
+    })
+
+
+
+
+
+
+    
 
 
 

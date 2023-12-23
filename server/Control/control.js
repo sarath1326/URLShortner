@@ -199,6 +199,32 @@ module.exports = {
         
 
           
+    },
+
+    save_delete:(id)=>{
+
+        return new Promise(async(resolve,reject)=>{
+
+            try {
+
+                Model.urlcreateModel.deleteOne({_id:id}).then(()=>{
+
+                     resolve()
+               
+                    }).catch(err=>{
+
+                        reject()
+
+                })
+             } catch (error) {
+
+                reject()
+                
+            }
+
+               
+        })
+         
     }
 
     

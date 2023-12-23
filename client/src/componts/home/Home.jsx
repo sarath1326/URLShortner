@@ -57,7 +57,7 @@ function Home() {
 
         <div >
 
-          <button onClick={()=>{navigate("/url")}} className='home-btn-url'> Shotr Url </button>
+          <button onClick={()=>{navigate("/url")}} className='home-btn-url'> Short Url </button>
 
           <button onClick={()=>{navigate("/qr")}} className='home-btn-qr'> QR Code </button>
 

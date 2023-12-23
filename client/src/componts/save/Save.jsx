@@ -9,6 +9,10 @@ import axios from "../constant/Axios"
 import { useEffect, useState } from 'react';
 import { message } from "antd"
 import { useNavigate } from 'react-router-dom';
+import {baseurl} from "../constant/baseurl"
+
+
+
 
 
 
@@ -30,6 +34,7 @@ function Save() {
             if(result.authfaild){
 
                 naviget("/log")
+                return
                   
             }
 
@@ -57,6 +62,51 @@ function Save() {
 
     }, [])
 
+    const copyfunc=(short)=>{
+
+        
+
+        navigator.clipboard.writeText(`${baseurl}${short}`);
+        
+        message.success("copy to clipboard ")
+       
+        
+
+
+    }
+
+
+    const deletefunc=(id,index)=>{
+
+
+        axios.post("/save_delete",{id,index}).then((respo)=>{
+
+
+            if(respo.data.flag){
+
+
+              getdata.splice(index,1)
+              setgetdata([...getdata])
+
+                  
+            }else{
+
+              message.error("server err")
+                
+            }
+
+             
+        }).catch(err=>{
+
+
+            message.error("somthing worng")
+        
+        })
+
+
+
+    }
+
 
 
 
@@ -79,13 +129,13 @@ function Save() {
 
                         {
 
-                            getdata.map((obj) => (
+                            getdata.map((obj,index) => (
 
 
                                 <div className='save-url-div' >
 
 
-                             <a> <span> {obj.short}  </span>   <FaCopy className='save-copy-icon' />  <BiSolidTrashAlt className='save-de-icon' />   </a>
+                             <a  href={`${baseurl}${obj.short}`}> <span className='save-name'>{obj.short}  </span></a>   <FaCopy className='save-copy-icon' onClick={()=>{copyfunc(obj.short)}} />  <BiSolidTrashAlt onClick={()=>{deletefunc(obj._id,index)}} className='save-de-icon' />  
 
 
 
