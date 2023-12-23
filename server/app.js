@@ -24,7 +24,7 @@ app.use(cors(
 
 
       {
-        origin: "http://localhost:3000",
+        origin: "https://urlshortner-11gk.onrender.com",
         methods: ["GET", "POST", "DELETE"],
        credentials: true,
           
