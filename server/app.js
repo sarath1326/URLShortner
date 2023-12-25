@@ -16,8 +16,8 @@ app.use(bodyparser.urlencoded({extended:true}))
 
 const _dirname=path.dirname("")
 
-const buildpath=path.join(_dirname,"../client/build")
-app.use(express.static(buildpath))
+// const buildpath=path.join(_dirname,"../client/build")
+// app.use(express.static(buildpath))
 
 // "https://urlshortner-11gk.onrender.com"
 
