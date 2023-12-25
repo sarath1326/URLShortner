@@ -2,11 +2,13 @@
 
 import axios from "axios";
 
+// "https://urlshortnerbackend-gjxz.onrender.com"
 
+const url="https://urlshortnerbackend-gjxz.onrender.com"
 
 const instans=axios.create({
 
-      baseURL:"https://urlshortnerbackend-gjxz.onrender.com"
+      baseURL:url
 });
 
 

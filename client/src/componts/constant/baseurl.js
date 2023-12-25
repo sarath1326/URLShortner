@@ -1,3 +1,3 @@
 
 
-export const baseurl="http://localhost:3001/redirect?short="
+export const baseurl="https://urlshortnerbackend-gjxz.onrender.com/redirect?short="

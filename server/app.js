@@ -19,16 +19,19 @@ const _dirname=path.dirname("")
 const buildpath=path.join(_dirname,"../client/build")
 app.use(express.static(buildpath))
 
+// "https://urlshortner-11gk.onrender.com"
+
 
 app.use(cors(
 
 
       {
-        origin: "https://urlshortner-11gk.onrender.com",
+        origin:["https://urlshortner-11gk.onrender.com"] ,
         methods: ["GET", "POST", "DELETE"],
        credentials: true,
           
       }
+      
 
 
 ));
@@ -62,7 +65,7 @@ app.use("/", router);
 
 
 
-app.listen(3001, () => {
+app.listen(8000, () => {
 
 
       console.log("servre started")

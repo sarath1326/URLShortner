@@ -6,11 +6,12 @@ const mongoose=require("mongoose");
 
 const DBconnecting=()=>{
 
-      mongoose.connect('mongodb://127.0.0.1:27017/URL').then(()=>{
+      mongoose.connect("mongodb+srv://sarathsarath93366:sarath1937@cluster0.pcfew5m.mongodb.net/?retryWrites=true&w=majority").then(()=>{
 
 
                console.log("DB connected");
-      }).catch(err=>{
+      
+            }).catch(err=>{
 
            console.log("DB connecting faild");
       });
