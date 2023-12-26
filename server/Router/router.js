@@ -93,9 +93,13 @@ router.post("/login",(req,res)=>{
          const token = JWT.sign({name:name,id:_id},"sarath1937");
 
          res.cookie("urljwt", token, {
+
+          maxAge: 360000,
+          sameSite:"none",
+          secure:true,
+          httpOnly:true
             
-           maxAge:360000,
-            httpOnly: true
+           
          });
 
          res.json({flag:true});

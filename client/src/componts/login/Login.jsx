@@ -58,6 +58,11 @@ function Login() {
 
 
     return (
+
+
+
+
+
         <div>
 
             <Navbar />
@@ -66,25 +71,29 @@ function Login() {
 
                 <div className='log-form-box-main'>
 
-                    <p className='log-form-title'> Login </p>
+                 <p className='log-form-title'> Login </p>
 
                     <form onSubmit={handleSubmit} className='log-form' >
 
                        
 
                         <input
+                           
                             type="text"
                             placeholder='enter email id'
                             name='email'
                             onChange={handleChange}
                             value={values.email}
-                        /><br />
+                       
+                      
+                      /><br/>
 
                         {
                             errors.email && touched.email ?
-
-                                <span> {errors.email}</span>
-                                : null
+                            
+                            <span> {errors.email}   </span>
+                              
+                            : null
                         }
 
 
@@ -93,57 +102,39 @@ function Login() {
 
 
                         <input
-                            type="text"
-                            placeholder='enter password'
-                            name='password'
-                            onChange={handleChange}
-                            value={values.password}
+                           
+                           type="text"
+                           placeholder='enter password'
+                           name='password'
+                           onChange={handleChange}
+                           value={values.password}
 
+                        
                         /><br />
 
                         {
                             errors.password && touched.password ?
 
-                                <>  <span> {errors.password} </span><br /> </>
+                              <> <span> {errors.password} </span> <br /> </>
 
-                                : null
+                                :  null
                         }
 
 
 
-                        <button type='submit' className='log-btn'> Login   </button><br/>
+                        <button type='submit' className='log-btn'> Login   </button> <br/>
 
-                        <p className='log-sigopt' onClick={()=>{navigate("/sig")}} > Create New Account ?   </p>
-
-
-
-
-
-
-
-                    </form>
-
-
-
-
-
-                </div>
-
-
-
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-        </div>
+                        <p className='log-sigopt' onClick={()=>{navigate("/sig")}} > Create New Account ?  </p>
+                        
+                        
+                        
+                         </form>
+                         
+                         </div>
+                         
+                          </div>
+                          
+                          </div>
     )
 }
 
